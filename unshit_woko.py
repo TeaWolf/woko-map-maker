@@ -98,4 +98,4 @@ for _, (point, addr, price, link) in df[['point', 'address', 'price', 'link']].i
         folium.Marker(point[0:2], popup = "<a href=\"{link}\">{addr}</a> | <b>{price}</b>".format(link=link, addr=addr, price=price)).add_to(m)
 
 
-m.save("map.html")
+m.save(OUTPUT_NAME)
